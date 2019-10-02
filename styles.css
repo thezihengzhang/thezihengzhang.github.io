@@ -71,3 +71,55 @@ ul {
 .full-width {
     width: 100%;
   }
+
+.navbar {
+    overflow: hidden;
+    background-color: #333
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float:right;
+}
+
+.navbar a:hover {
+    background-color: lightslategray;
+    color: black;
+}
+
+.intro {
+    padding: 80px;
+    text-align: center;
+    background: rgba(0, 153, 255, 0.877);
+    color: White;
+}
+
+a [href*="flaticon.com/"] {
+    background:url("https://github.com/thezihengzhang/thezihengzhang.github.io/blob/master/Sample%20Resume.docx") no-repeat left center;
+    padding-left:19px;
+}
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
