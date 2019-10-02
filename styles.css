@@ -123,3 +123,14 @@ a [href*="flaticon.com/"] {
     background-color: #f1f1f1;
     padding: 20px;
   }
+
+ /* Icon size */
+ .far, .fa-address-card {
+     margin-left: 15px;
+     margin-top: 20px;
+ } 
+
+ .far, .fa-envelope {
+    margin-right: 15px;
+    margin-top: 20px;
+ }
