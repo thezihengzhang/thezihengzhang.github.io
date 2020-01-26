@@ -1,16 +1,28 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #f1f1f1;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     left: 0;
     right:0;
     width: auto;
 }
 
+title {
+    font-size: 70px;
+}
+
 link {
     outline: none;
     cursor: pointer;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 h2 {
@@ -43,16 +55,6 @@ ul {
     box-sizing: border-box;
   }
 
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: stretch;
-    box-sizing: border-box;
-}
-
 .flex-row-center {
     display: flex;
     flex-direction: row;
@@ -71,3 +73,155 @@ ul {
 .full-width {
     width: 100%;
   }
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    float: right;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float:right;
+}
+
+.navbar a:hover {
+    background-color: lightslategray;
+    color: black;
+}
+
+.intro {
+    padding: 80px;
+    text-align: center;
+    background-image: url(leavesbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    color: White;
+}
+
+a [href*="flaticon.com/"] {
+    background:url("https://github.com/thezihengzhang/thezihengzhang.github.io/blob/master/Sample%20Resume.docx") no-repeat left center;
+    padding-left:19px;
+}
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+
+ /* Icon size */
+ .far, .fa-address-card {
+     margin-left: 15px;
+     margin-top: 20px;
+     
+ } 
+
+ a:visited {
+     color: green;
+ }
+ .far, .fa-envelope {
+    margin-right: 15px;
+    margin-top: 20px;
+ }
+
+ .flex-item-stretch {
+     flex: 1 auto;
+ }
+
+ .flex-column {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     align-items: stretch;
+     align-content: stretch;
+     box-sizing: border-box;
+ }
+
+ .flex-item-stretch-4 {
+     flex: 1 auto;
+ }
+
+ .highlight-text {
+     font-weight: bold;
+ }
+
+ .text {
+     margin: 10px 0 10px 0;
+     padding: 0;
+     float: left;
+ }
+ 
+ .image {
+    border-radius: 2px;
+    width: 100%;
+    margin: 15px 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    float: left;
+  }
+
+  .max-width-400 {
+      max-width: 400px;
+  }
+
+.img {
+    border-radius: 2px;
+    width: 100%;
+    margin: 15px 0;
+    float: left;
+}
+
+.txt {
+    float: left;
+}
+
+.container {
+    width: 500px ;
+    max-width: 100% ;
+    margin-left: auto ;
+    margin-right: auto ;
+    margin-bottom: auto;
+}
+
+.boxed {
+    border: 3px solid green;
+}
+
+.footer-row {
+    background-color: darkgrey;
+    display: flex;
+    text-align: center;
+}
+
+.paragraph-align {
+    margin: 0 auto;
+    height: 30px;
+}
