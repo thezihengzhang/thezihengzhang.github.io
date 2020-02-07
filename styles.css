@@ -17,6 +17,7 @@ link {
     cursor: pointer;
 }
 
+/* Headers */
 h1 {
     font-size: 60px;
     margin: 10px 0 0 0;
@@ -41,10 +42,7 @@ h3 {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-ul {
-    margin: 10px 0 10px 0;
-}
-
+/* Flexbox Structuring - Trying out flexboxes */
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -65,6 +63,24 @@ ul {
     box-sizing: border-box;
   }
 
+.flex-item-stretch {
+    flex: 1 auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    box-sizing: border-box;
+}
+
+.flex-item-stretch-4 {
+    flex: 1 auto;
+}
+/* Margins and width */
 .add-top-margin {
     margin-top: 15px;
   }
@@ -74,6 +90,7 @@ ul {
     width: 100%;
   }
 
+/* Navigation Bar */
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -98,6 +115,7 @@ ul {
     color: black;
 }
 
+/* Head Background */
 .intro {
     padding: 80px;
     text-align: center;
@@ -109,20 +127,15 @@ ul {
     color: White;
 }
 
-a [href*="flaticon.com/"] {
-    background:url("https://github.com/thezihengzhang/thezihengzhang.github.io/blob/master/Sample%20Resume.docx") no-repeat left center;
-    padding-left:19px;
-}
-
 /* Column container */
 .row {  
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   
-  /* Create two unequal columns that sits next to each other */
+
   /* Sidebar/left column */
   .side {
     -ms-flex: 30%; /* IE10 */
@@ -134,34 +147,16 @@ a [href*="flaticon.com/"] {
  /* Icon size */
  .far, .fa-address-card {
      margin-left: 15px;
-     margin-top: 20px;
-     
- } 
-
- a:visited {
-     color: green;
- }
- .far, .fa-envelope {
+     margin-top: 20px;    
+  }
+.far, .fa-envelope {
     margin-right: 15px;
     margin-top: 20px;
- }
+}
 
- .flex-item-stretch {
-     flex: 1 auto;
- }
-
- .flex-column {
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
-     justify-content: flex-start;
-     align-items: stretch;
-     align-content: stretch;
-     box-sizing: border-box;
- }
-
- .flex-item-stretch-4 {
-     flex: 1 auto;
+/* Visited Links*/
+ a:visited {
+     color: green;
  }
 
  .highlight-text {
@@ -174,6 +169,7 @@ a [href*="flaticon.com/"] {
      float: left;
  }
  
+ /* Image sizing */
  .image {
     border-radius: 2px;
     width: 100%;
@@ -199,6 +195,7 @@ a [href*="flaticon.com/"] {
     float: left;
 }
 
+/* Paragraph Structure */
 .txt {
     float: left;
 }
